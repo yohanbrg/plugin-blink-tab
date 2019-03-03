@@ -14,7 +14,7 @@ class BlinkTab_Handler{
        if (is_admin()) {
        	return;
        }
-       wp_register_script('blink-tab', BLINK_TAB_JS_URL . 'blink-tab.js', [], false, true);
+       wp_register_script('blink-tab', BLINK_TAB_JS_URL . 'blink-tab.min.js', [], false, true);
        $blinktab_settings = [
            'wording' => get_option('blinktab_option', ''),
        ];
